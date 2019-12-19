@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ebcfbf065f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+</head>
+<body>
+    <div class="navbar-wrapper">
+        <div class="main">
+            <a href="#" onclick="myFunction()" id="dropdown" class="toggle">
+                <i class="fas fa-bars"></i>
+            </a>
+            <a href="index.html" class="title">Apocilyptica</a>
+        </div>
+        <div class="left">
+            <a href="index.html" class="links">Link 1</a>
+            <a href="index.html" class="links">Link 2</a>
+        </div>
+        <div class="right">
+            <a href="index.html" class="links">Link 3</a>
+        </div>
+    </div>
+</body>
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("left",)[0];
+  x.getElementsByClassName('links')[0].style.display = "block";
+  x.getElementsByClassName('links')[1].style.display = "block";
+  var y = document.getElementsByClassName("right",)[0];
+  y.getElementsByClassName('links')[0].style.display = "block";
+}
+
+</script>
+</html>

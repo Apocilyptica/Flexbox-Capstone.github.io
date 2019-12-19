@@ -1,0 +1,96 @@
+body {
+    font-family: 'Audiowide', cursive;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar-wrapper {
+    display: flex;
+    background-color: black;
+    align-items: center;
+    
+}
+
+.title {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 0px 50px;
+}
+
+.links {
+    text-align: center;
+    padding: 1em;
+    background-color: grey;
+    color: white;
+    text-decoration: none;
+}
+
+.left {
+    display: flex;
+}
+
+.right {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+
+.links:hover {
+    background-color: white;
+    color: black;
+}
+
+.navbar-wrapper i {
+    display: none;
+}
+
+@media (max-width: 649px) {
+    .navbar-wrapper {
+        display: block;
+        color: white;
+        background: none;
+        align-items: center;
+    }
+
+    .navbar-wrapper .main {
+        display: flex;
+        background-color: black;
+        color: white;
+        align-items: center;
+    }
+
+    .navbar-wrapper > .main i {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .navbar-wrapper > .main i:hover {
+        background-color: grey;
+        color: black;
+    }
+
+    .navbar-wrapper > .main a:active {
+        background-color: grey;
+        color: black;
+    }
+
+
+    .right, .left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links {
+        display: none;
+    }
+}
+
+
+
+
+
